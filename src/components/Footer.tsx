@@ -53,7 +53,6 @@ export default function Footer() {
               </div>
 
               <div className="rcmbBrandGear" aria-hidden="true">
-                <RotaryGear />
               </div>
             </div>
 
@@ -88,7 +87,7 @@ export default function Footer() {
             <a className="rcmbPost" href="/news/a-remarkable-victory-at-the-zonal-rota-quiz-2025">
               <img
                 className="rcmbPostImg"
-                src="12.png"
+                src="news1.jpg"
                 alt=""
                 loading="lazy"
               />
@@ -107,7 +106,7 @@ export default function Footer() {
             <a className="rcmbPost" href="/news/world-toilet-day-dharmasthali">
               <img
                 className="rcmbPostImg"
-                src="13.png"
+                src="news2.jpg"
                 alt=""
                 loading="lazy"
               />
