@@ -1,6 +1,6 @@
 import Hero from "./components/Hero";
 import "./index.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 const App = () => {
   return (
     <>

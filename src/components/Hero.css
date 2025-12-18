@@ -75,6 +75,9 @@
   font-size: 22px;
   z-index: 3;
   box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  background-color: 0.25s ease;
+  transform: 0.25s ease;
+  box-shadow: 0.25s ease;
 }
 
 .hero-arrow.left {
@@ -82,9 +85,23 @@
   background: #ffffff;
 }
 
+/* LEFT arrow hover */
+.hero-arrow.left:hover {
+  background-color:#f5a623;
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
 .hero-arrow.right {
   right: 28px;
   background: #f5a623;
+}
+
+/* RIGHT arrow hover */
+.hero-arrow.right:hover {
+  background-color:#ffffff; /* slightly darker gold */
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
 /* Scroll Button */
