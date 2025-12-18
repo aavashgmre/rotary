@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react"
-import Navbar from "../components/Navbar"
+import Navbar from "./Navbar"
 import "./home.css"
 
 import heroMain from "../assets/11.png"
