@@ -59,14 +59,6 @@ const Hero = () => {
       <button className="hero-arrow right" onClick={nextSlide}>
         →
       </button>
-
-      {/* Scroll to Top */}
-      <button
-        className="scroll-top"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        ↑
-      </button>
     </section>
   );
 };

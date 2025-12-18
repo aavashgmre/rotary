@@ -134,6 +134,11 @@
   transform: translateY(2px);
 }
 
+.rcmbBrandGear RotaryGear{
+  width: 5px;
+  height: 10px;
+}
+
 .rcmbPublicationsBtn{
   width: fit-content;
   display: inline-flex;
