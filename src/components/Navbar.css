@@ -1,0 +1,341 @@
+:root{
+  --rcmbNavy:#0f1f3a;
+  --rcmbText:#0f172a;
+  --rcmbBorder:rgba(15,23,42,.10);
+  --rcmbOrange:#f3aa1a;
+  --rcmbMax:1280px;
+}
+
+.rcmbHeaderFixed{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  z-index:9999;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.rcmbTopbar{
+  background:var(--rcmbNavy);
+  color:#fff;
+}
+
+.rcmbTopbarInner{
+  max-width:var(--rcmbMax);
+  margin:0 auto;
+  padding:10px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.rcmbTopLeft{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  min-width:0;
+}
+
+.rcmbTopItem{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  line-height:1;
+  white-space:nowrap;
+}
+
+.rcmbTopIcon{
+  width:18px;
+  height:18px;
+  opacity:.95;
+  flex:0 0 auto;
+}
+
+.rcmbTopText{
+  opacity:.95;
+}
+
+.rcmbTopEmail{
+  max-width:520px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.rcmbTopRight{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.rcmbSocial{
+  color:#fff;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:26px;
+  height:26px;
+  border-radius:6px;
+  text-decoration:none;
+  opacity:.95;
+}
+
+.rcmbSocial:hover{
+  opacity:1;
+  background:rgba(255,255,255,.08);
+}
+
+.rcmbSocialIcon{
+  width:16px;
+  height:16px;
+}
+
+.rcmbNav{
+  background:#fff;
+  border-bottom:1px solid var(--rcmbBorder);
+}
+
+.rcmbNavInner{
+  max-width:var(--rcmbMax);
+  margin:0 auto;
+  padding:12px 18px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  position:relative;
+}
+
+.rcmbBrand{
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+  min-width:0;
+}
+
+.rcmbBrandOnlyLogo{
+  min-width:0;
+}
+
+.rcmbLogo{
+  object-fit:contain;
+  flex:0 0 auto;
+}
+
+.rcmbLogoOnly{
+  width:220px;
+  height:64px;
+  object-fit:contain;
+}
+
+.rcmbLinks{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+}
+
+.rcmbLink{
+  color:var(--rcmbText);
+  text-decoration:none;
+  font-size:15px;
+  font-weight:500;
+  padding:10px 10px;
+  border-radius:8px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  white-space:nowrap;
+}
+
+.rcmbLink:hover{
+  background:rgba(15,23,42,.05);
+}
+
+.rcmbDrop{
+  position:relative;
+}
+
+.rcmbDropBtn{
+  background:transparent;
+  border:0;
+  cursor:pointer;
+  font:inherit;
+}
+
+.rcmbChevron{
+  width:16px;
+  height:16px;
+  opacity:.8;
+  transform:translateY(1px);
+}
+
+.rcmbDropMenu{
+  position:absolute;
+  top:100%;
+  left:0;
+  min-width:220px;
+  background:#fff;
+  border:1px solid var(--rcmbBorder);
+  border-radius:12px;
+  box-shadow:0 14px 40px rgba(15,23,42,.14);
+  padding:8px;
+  margin-top:10px;
+  display:none;
+}
+
+.rcmbDrop.isActive .rcmbDropMenu{
+  display:block;
+}
+
+@media (hover:hover){
+  .rcmbDrop:hover .rcmbDropMenu{
+    display:block;
+  }
+  .rcmbDrop:hover .rcmbLink{
+    background:rgba(15,23,42,.05);
+  }
+}
+
+.rcmbDropItem{
+  display:block;
+  padding:10px 12px;
+  border-radius:10px;
+  color:var(--rcmbText);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:500;
+}
+
+.rcmbDropItem:hover{
+  background:rgba(15,23,42,.05);
+}
+
+.rcmbDonate{
+  margin-left:auto;
+  background:var(--rcmbOrange);
+  color:#111;
+  text-decoration:none;
+  font-weight:700;
+  font-size:16px;
+  padding:12px 26px;
+  border-radius:8px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 1px 0 rgba(15,23,42,.12);
+}
+
+.rcmbDonate:hover{
+  filter:brightness(.98);
+}
+
+.rcmbDonateMobile{
+  display:none;
+}
+
+.rcmbHamburger{
+  display:none;
+  margin-left:auto;
+  width:46px;
+  height:40px;
+  border-radius:10px;
+  border:1px solid var(--rcmbBorder);
+  background:#fff;
+  cursor:pointer;
+  padding:8px 10px;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+
+.rcmbHamburger span{
+  display:block;
+  width:22px;
+  height:2px;
+  background:var(--rcmbText);
+  border-radius:999px;
+}
+
+@media (max-width:1100px){
+  .rcmbLinks{ gap:10px; }
+  .rcmbLink{ padding:10px 8px; }
+  .rcmbLogoOnly{ width:200px; height:58px; }
+}
+
+@media (max-width:920px){
+  .rcmbTopEmail{ display:none; }
+  .rcmbDonate{ display:none; }
+  .rcmbHamburger{ display:inline-flex; }
+
+  .rcmbLinks{
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    background:#fff;
+    border-bottom:1px solid var(--rcmbBorder);
+    display:none;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content:flex-start;
+    gap:0;
+    padding:10px 12px;
+  }
+
+  .rcmbLinks.isOpen{
+    display:flex;
+  }
+
+  .rcmbLink{
+    width:100%;
+    justify-content:space-between;
+    padding:12px 12px;
+    border-radius:10px;
+  }
+
+  .rcmbDrop{
+    width:100%;
+  }
+
+  .rcmbDropMenu{
+    position:static;
+    display:none;
+    box-shadow:none;
+    border:0;
+    padding:0 0 8px 0;
+    margin-top:0;
+  }
+
+  .rcmbDrop.isActive .rcmbDropMenu{
+    display:block;
+  }
+
+  .rcmbDropItem{
+    padding:10px 12px 10px 26px;
+    border-radius:10px;
+  }
+
+  .rcmbDonateMobile{
+    display:inline-flex;
+    margin-top:6px;
+    background:var(--rcmbOrange);
+    color:#111;
+    text-decoration:none;
+    font-weight:800;
+    font-size:16px;
+    padding:12px 12px;
+    border-radius:10px;
+    justify-content:center;
+  }
+}
+
+@media (max-width:520px){
+  .rcmbTopbarInner{ padding:10px 12px; }
+  .rcmbNavInner{ padding:12px 12px; }
+  .rcmbLogoOnly{ width:170px; height:54px; }
+}
