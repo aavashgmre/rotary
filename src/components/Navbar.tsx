@@ -188,7 +188,7 @@ export default function Navbar() {
           <a className="rcmbBrand rcmbBrandOnlyLogo" href="/" aria-label="Home">
             <img
               className="rcmbLogo rcmbLogoOnly"
-              src="logo.png"
+              src="image.png"
               alt="Rotary Club of Matribhumi Baluwatar"
               draggable={false}
             />
