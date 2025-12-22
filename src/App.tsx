@@ -12,8 +12,10 @@ const App = () => {
       <Home/>
       <NewsSection/>
       <Footer/>
+
     </>
   );
 };
+
 
 export default App;
